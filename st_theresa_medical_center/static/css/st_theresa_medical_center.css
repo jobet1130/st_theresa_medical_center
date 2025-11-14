@@ -1,0 +1,210 @@
+/**
+ * Author: Jobet P. Casquejo
+ * File: st_theresa_medical_center.css
+ * Description: This file contains the styles for the st_theresa_medical_center theme.
+ * Date: 11-14-2025
+ * Version: 1.0
+ */
+
+:root {
+  /* Medical Theme Colors */
+  --background: 210 17% 98%;
+  --foreground: 0 0% 10%;
+
+  --card: 0 0% 100%;
+  --card-foreground: 0 0% 10%;
+
+  --popover: 0 0% 100%;
+  --popover-foreground: 0 0% 10%;
+
+  --primary: 214 100% 52%;
+  --primary-foreground: 0 0% 100%;
+
+  --secondary: 194 100% 61%;
+  --secondary-foreground: 0 0% 10%;
+
+  --muted: 210 17% 95%;
+  --muted-foreground: 215 14% 46%;
+
+  --accent: 167 55% 54%;
+  --accent-foreground: 0 0% 100%;
+
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 100%;
+
+  --border: 214 32% 91%;
+  --input: 214 32% 91%;
+  --ring: 214 100% 52%;
+
+  --radius: 0.75rem;
+  
+  /* Medical specific colors */
+  --medical-blue: 214 100% 52%;
+  --medical-light-blue: 194 100% 61%;
+  --medical-teal: 167 55% 54%;
+  --medical-green: 160 84% 39%;
+  
+  /* Shadows */
+  --shadow-soft: 0 2px 8px rgba(11, 106, 255, 0.08);
+  --shadow-medium: 0 4px 16px rgba(11, 106, 255, 0.12);
+  --shadow-large: 0 8px 32px rgba(11, 106, 255, 0.16);
+
+  --sidebar-background: 0 0% 98%;
+
+  --sidebar-foreground: 240 5.3% 26.1%;
+
+  --sidebar-primary: 240 5.9% 10%;
+
+  --sidebar-primary-foreground: 0 0% 98%;
+
+  --sidebar-accent: 240 4.8% 95.9%;
+
+  --sidebar-accent-foreground: 240 5.9% 10%;
+
+  --sidebar-border: 220 13% 91%;
+
+  --sidebar-ring: 217.2 91.2% 59.8%;
+}
+
+.dark {
+  --background: 220 26% 14%;
+  --foreground: 0 0% 98%;
+
+  --card: 220 26% 18%;
+  --card-foreground: 0 0% 98%;
+
+  --popover: 220 26% 18%;
+  --popover-foreground: 0 0% 98%;
+
+  --primary: 214 100% 52%;
+  --primary-foreground: 0 0% 100%;
+
+  --secondary: 220 26% 25%;
+  --secondary-foreground: 0 0% 98%;
+
+  --muted: 220 26% 25%;
+  --muted-foreground: 215 14% 65%;
+
+  --accent: 167 55% 54%;
+  --accent-foreground: 0 0% 100%;
+
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 100%;
+
+  --border: 220 26% 25%;
+  --input: 220 26% 25%;
+  --ring: 214 100% 52%;
+  
+  --sidebar-background: 220 26% 14%;
+  --sidebar-foreground: 0 0% 98%;
+  --sidebar-primary: 214 100% 52%;
+  --sidebar-primary-foreground: 0 0% 100%;
+  --sidebar-accent: 220 26% 25%;
+  --sidebar-accent-foreground: 0 0% 98%;
+  --sidebar-border: 220 26% 25%;
+  --sidebar-ring: 214 100% 52%;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+body {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2.25rem; /* 36px */
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3rem; /* 48px */
+  }
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 3.75rem; /* 60px */
+  }
+}
+
+h2 {
+  font-size: 1.875rem; /* 30px */
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 2.25rem; /* 36px */
+  }
+}
+
+@media (min-width: 1024px) {
+  h2 {
+    font-size: 3rem; /* 48px */
+  }
+}
+
+h3 {
+  font-size: 1.5rem; /* 24px */
+}
+
+@media (min-width: 768px) {
+  h3 {
+    font-size: 1.875rem; /* 30px */
+  }
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
